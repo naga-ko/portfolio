@@ -90,7 +90,7 @@ gsap.utils.toArray('.main__back').forEach(wrap => {
             trigger: wrap,
             start: "top top ",
             toggleActions: "play none none reverse",
-            // markers: true,
+            markers: true,
         }
     })
 });

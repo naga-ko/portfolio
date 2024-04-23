@@ -287,12 +287,6 @@ body {
   z-index: 999;
 }
 
-.main {
-  position: relative;
-  width: 100%;
-  background-color: #010101;
-  height: 150vh;
-}
 .main__back {
   top: 0px;
   left: -1200px;
@@ -302,8 +296,17 @@ body {
   height: 150vh;
   transform: skewX(-10deg);
 }
-.main__inner {
+.main__1 {
   display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #010101;
+  height: 150vh;
+}
+.main__2 {
+  width: 100%;
+  background-color: #010101;
+  height: 150vh;
 }
 .main__about {
   bottom: 0;
@@ -346,8 +349,8 @@ body {
     height: 40vw;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
+    -o-object-position: left;
+       object-position: left;
   }
 }
 .main__about__text {
@@ -358,9 +361,10 @@ body {
   left: 50%;
 }
 .main__about__text__title {
-  font-size: 24px;
-  color: #fefefe;
+  font-size: 30px;
+  color: #21AEAE;
   font-weight: normal;
+  margin-bottom: 30px;
 }
 .main__about__text__title span {
   margin-left: 20px;
@@ -369,14 +373,17 @@ body {
 .main__about__text__1 {
   font-size: 24px;
   color: #fefefe;
+  margin-bottom: 10px;
 }
 .main__about__text__2 {
   font-size: 24px;
   color: #fefefe;
+  margin-bottom: 10px;
 }
 .main__about__text__3 {
   font-size: 24px;
   color: #fefefe;
+  margin-bottom: 10px;
 }
 .main__about__title {
   position: absolute;

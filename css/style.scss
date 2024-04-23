@@ -335,11 +335,6 @@ body {
 }
 
 .main {
-    position: relative;
-    width: 100%;
-    background-color: #010101;
-    height: 150vh;
-
     &__back {
         top: 0px;
         left: -1200px;
@@ -350,8 +345,19 @@ body {
         transform: skewX(-10deg);
     }
 
-    &__inner {
+    &__1 {
         display: flex;
+        position: relative;
+        width: 100%;
+        background-color: #010101;
+        height: 150vh;
+    }
+
+    &__2 {
+        width: 100%;
+        background-color: #010101;
+        height: 150vh;
+
     }
 
     &__about {
@@ -390,7 +396,7 @@ body {
                     width: 40vw;
                     height: 40vw;
                     object-fit: cover;
-                    object-position: center;
+                    object-position: left;
                 }
             }
         }
@@ -403,9 +409,11 @@ body {
             left: 50%;
 
             &__title {
-                font-size: 24px;
-                color: #fefefe;
+                font-size: 30px;
+                color: #21AEAE;
                 font-weight: normal;
+                margin-bottom: 30px;
+
 
                 span {
                     margin-left: 20px;
@@ -416,16 +424,19 @@ body {
             &__1 {
                 font-size: 24px;
                 color: #fefefe;
+                margin-bottom: 10px;
             }
 
             &__2 {
                 font-size: 24px;
                 color: #fefefe;
+                margin-bottom: 10px;
             }
 
             &__3 {
                 font-size: 24px;
                 color: #fefefe;
+                margin-bottom: 10px;
             }
         }
 
@@ -436,6 +447,9 @@ body {
             top: 200px;
             left: 50%;
             transform: translateX(-50%);
+            // font-family: "Julius Sans One", sans-serif;
+            // font-weight: 400;
+            // font-style: normal;
         }
     }
 }
