@@ -1,0 +1,441 @@
+@charset "utf-8";
+
+$color-bak: #010101;
+$color-White: #fefefe;
+
+
+$breakpoints: (
+    "xmin": "screen and (min-width: 320px)",
+    "min": "screen and (min-width: 300px)",
+    "sm": "screen and (min-width: 420px)",
+    "ss": "screen and (min-width: 610px)",
+    "cnt": "screen and (min-width: 800px)",
+    "cent":"screen and (min-width: 1000px)",
+    "mp":"screen and (min-width: 1112px)",
+    "md": "screen and (min-width: 1366px)",
+    "mm": "screen and (min-width: 1200px)",
+    "ma": "screen and (min-width: 1400px)",
+    ) !default;
+
+@mixin mq($breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+@mixin inner($w: (1200/1280)*100%, $mw: 2000px) {
+    width: min($w, $mw
+    );
+margin-left: auto;
+margin-right: auto;
+}
+
+@mixin flex($a: center, $j: space-between) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $j;
+    align-items: $a;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: $color-bak;
+    height: 100vh;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__flex {
+        @include flex();
+
+        @include mq(ss) {
+            @include flex();
+            width: 90%;
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100vh;
+
+        @include mq(ss) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+        }
+
+        @include mq(cent) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+        }
+    }
+
+    &__title1 {
+        //background-image: url(../images/main__about__img1.webp);
+        //background-position: bottom -638px left;
+        //-webkit-background-clip: text;
+        color: white;
+        //文字色を白色(不透明)にする：IE用
+        //-webkit-text-fill-color: transparent;
+        font-family: "Julius Sans One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3em;
+        letter-spacing: -0.04em;
+        line-height: 1;
+
+        @include mq(sm) {
+            font-size: 4em;
+        }
+
+        @include mq(ss) {
+            font-size: 6em;
+        }
+
+        @include mq(cent) {
+            font-size: 8em;
+        }
+    }
+
+    &__title2 {
+        //background-image: url(../images/main__about__img1.webp);
+        //background-position: bottom -543px left;
+        //-webkit-background-clip: text;
+        color: white;
+        /* 文字色を白色(不透明)にする：IE用 */
+        //-webkit-text-fill-color: transparent;
+        font-family: "Julius Sans One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3em;
+        letter-spacing: -0.05em;
+        line-height: 1;
+
+        @include mq(sm) {
+            font-size: 4em;
+        }
+
+        @include mq(ss) {
+            font-size: 6em;
+        }
+
+        @include mq(cent) {
+            font-size: 8em;
+        }
+    }
+
+    &__title3 {
+        //background-image: url(../images/main__about__img1.webp);
+        //background-position: bottom -420px left;
+        //-webkit-background-clip: text;
+        color: white;
+        /* 文字色を白色(不透明)にする：IE用 */
+        // -webkit-text-fill-color: transparent;
+        font-family: "Julius Sans One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3em;
+        letter-spacing: -0.05em;
+        line-height: 1;
+
+        @include mq(sm) {
+            font-size: 4em;
+        }
+
+        @include mq(ss) {
+            font-size: 6em;
+        }
+
+        @include mq(cent) {
+            font-size: 8em;
+        }
+    }
+
+    &__gnav {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 100;
+        width: 80px;
+        height: 80px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../images/hamberger_bakg.png);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        &__list {
+            z-index: 100;
+        }
+
+        span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background-color: #21AEAE;
+            margin: 4px 0;
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .menu {
+        position: fixed;
+        top: 0px;
+        right: -100%;
+        /* Initially hide the menu off the screen */
+        width: 200px;
+        height: 100vh;
+        background-color: #fefefe;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+        transition: right 0.3s ease;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    .menu ul {
+        padding: 0;
+        margin-top: 22px;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        color: #333;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    &__line__list {
+        display: none;
+
+        @include mq(ma) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 360px;
+            height: 100vh;
+        }
+    }
+
+    &__line1 {
+        width: 100px;
+        height: 500px;
+        background-image: url(../images/main__about__img1.webp);
+        background-position: -745px 850px;
+        -webkit-background-clip: background;
+        color: white;
+        /* 文字色を白色(不透明)にする：IE用 */
+        transform: skewX(-10deg);
+    }
+
+    &__line2 {
+        width: 100px;
+        height: 500px;
+        background-image: url(../images/main__about__img1.webp);
+        background-position: -875px 850px;
+        -webkit-background-clip: background;
+        color: white;
+        /* 文字色を白色(不透明)にする：IE用 */
+        transform: skewX(-10deg);
+    }
+
+    &__line3 {
+        width: 100px;
+        height: 500px;
+        background-image: url(../images/main__about__img1.webp);
+        background-position: -1005px 850px;
+        -webkit-background-clip: background;
+        color: white;
+        /* 文字色を白色(不透明)にする：IE用 */
+        transform: skewX(-10deg);
+    }
+
+    &__back__img1 {
+        display: block;
+        top: 500px;
+        left: 200px;
+        width: 160px;
+        height: 360px;
+        position: absolute;
+        background-image: url(../images/Group\ 39.png);
+        object-fit: cover;
+        object-position: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 999;
+    }
+
+    &__back__img2 {
+        display: block;
+        top: 1400px;
+        right: 200px;
+        width: 160px;
+        height: 360px;
+        position: absolute;
+        background-image: url(../images/Group\ 39.png);
+        object-fit: cover;
+        object-position: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 999;
+    }
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    background-color: #010101;
+    height: 150vh;
+
+    &__back {
+        top: 0px;
+        left: -1200px;
+        background-color: #21AEAE;
+        position: absolute;
+        width: 54%;
+        height: 150vh;
+        transform: skewX(-10deg);
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__about {
+        bottom: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include mq(ss) {
+            top: -300px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+        }
+
+        &__in {
+            @include mq(ss) {
+                width: 50%;
+            }
+
+            &__img {
+                position: absolute;
+                top: 621px;
+                left: -1100px;
+                max-width: 500px;
+                max-height: 500px;
+                margin: 80px auto 50px auto;
+                width: 80%;
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+
+                @include mq(ss) {
+                    margin: 80px auto 50px auto;
+                    width: 40vw;
+                    height: 40vw;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+        &__text {
+            top: 821px;
+            width: 50%;
+            position: absolute;
+            margin-left: 3vw;
+            left: 50%;
+
+            &__title {
+                font-size: 24px;
+                color: #fefefe;
+                font-weight: normal;
+
+                span {
+                    margin-left: 20px;
+                    font-size: 17px;
+                }
+            }
+
+            &__1 {
+                font-size: 24px;
+                color: #fefefe;
+            }
+
+            &__2 {
+                font-size: 24px;
+                color: #fefefe;
+            }
+
+            &__3 {
+                font-size: 24px;
+                color: #fefefe;
+            }
+        }
+
+        &__title {
+            position: absolute;
+            font-size: 80px;
+            color: #fefefe;
+            top: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
