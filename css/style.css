@@ -181,7 +181,7 @@ body {
   margin: 4px 0;
   transition: transform 0.3s ease;
 }
-.header .menu {
+.header__menu {
   position: fixed;
   top: 0px;
   right: -100%;
@@ -194,17 +194,17 @@ body {
   z-index: 99;
   transition: right 0.3s ease;
 }
-.header .menu.active {
+.header__menu.active {
   right: 0;
 }
-.header .menu ul {
+.header__menu ul {
   padding: 0;
   margin-top: 22px;
 }
-.header .menu li {
+.header__menu li {
   margin-bottom: 10px;
 }
-.header .menu a {
+.header__menu a {
   color: #333;
   font-size: 18px;
   text-decoration: none;
@@ -296,17 +296,18 @@ body {
   height: 150vh;
   transform: skewX(-10deg);
 }
-.main__1 {
+.main__outer1 {
   display: flex;
   position: relative;
   width: 100%;
   background-color: #010101;
   height: 150vh;
 }
-.main__2 {
+.main__outer2 {
   width: 100%;
   background-color: #010101;
   height: 150vh;
+  position: relative;
 }
 .main__about {
   bottom: 0;
@@ -386,6 +387,14 @@ body {
   margin-bottom: 10px;
 }
 .main__about__title {
+  position: absolute;
+  font-size: 80px;
+  color: #fefefe;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main__works__title {
   position: absolute;
   font-size: 80px;
   color: #fefefe;

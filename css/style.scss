@@ -222,7 +222,7 @@ body {
         }
     }
 
-    .menu {
+    &__menu {
         position: fixed;
         top: 0px;
         right: -100%;
@@ -236,20 +236,20 @@ body {
         transition: right 0.3s ease;
     }
 
-    .menu.active {
+    &__menu.active {
         right: 0;
     }
 
-    .menu ul {
+    &__menu ul {
         padding: 0;
         margin-top: 22px;
     }
 
-    .menu li {
+    &__menu li {
         margin-bottom: 10px;
     }
 
-    .menu a {
+    &__menu a {
         color: #333;
         font-size: 18px;
         text-decoration: none;
@@ -345,7 +345,7 @@ body {
         transform: skewX(-10deg);
     }
 
-    &__1 {
+    &__outer1 {
         display: flex;
         position: relative;
         width: 100%;
@@ -353,11 +353,11 @@ body {
         height: 150vh;
     }
 
-    &__2 {
+    &__outer2 {
         width: 100%;
         background-color: #010101;
         height: 150vh;
-
+        position: relative;
     }
 
     &__about {
@@ -450,6 +450,17 @@ body {
             // font-family: "Julius Sans One", sans-serif;
             // font-weight: 400;
             // font-style: normal;
+        }
+    }
+
+    &__works {
+        &__title {
+            position: absolute;
+            font-size: 80px;
+            color: #fefefe;
+            top: 200px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
