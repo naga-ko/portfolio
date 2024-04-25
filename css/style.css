@@ -537,4 +537,7 @@ body {
   left: -9px;
   z-index: 9;
 }
+.main__works .list1 {
+  background-color: #010101;
+}
 /*# sourceMappingURL=style.css.map */
