@@ -83,7 +83,7 @@ gsap.utils.toArray('.header__line3').forEach(wrap => {
     })
 });
 
-gsap.utils.toArray('.main__back').forEach(wrap => {
+gsap.utils.toArray('.main__background').forEach(wrap => {
     gsap.to(wrap, {
         x: +1080,
         scrollTrigger: {
