@@ -2,6 +2,7 @@
 
 $color-bak: #010101;
 $color-White: #fefefe;
+$color-accent: #21AEAE;
 
 
 $breakpoints: (
@@ -67,7 +68,7 @@ body {
 
 .header {
     background-color: $color-bak;
-    height: 100vh;
+    height: 157vh;
 
     &__inner {
         @include inner();
@@ -140,7 +141,7 @@ body {
         //background-image: url(../images/main__about__img1.webp);
         //background-position: bottom -543px left;
         //-webkit-background-clip: text;
-        color: white;
+        color: $color-White;
         /* 文字色を白色(不透明)にする：IE用 */
         //-webkit-text-fill-color: transparent;
         font-family: "Julius Sans One", sans-serif;
@@ -216,7 +217,7 @@ body {
             display: block;
             width: 30px;
             height: 4px;
-            background-color: #21AEAE;
+            background-color: $color-accent;
             margin: 4px 0;
             transition: transform 0.3s ease;
         }
@@ -229,7 +230,7 @@ body {
         /* Initially hide the menu off the screen */
         width: 200px;
         height: 100vh;
-        background-color: #fefefe;
+        background-color: $color-White;
         padding: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         z-index: 99;
@@ -318,19 +319,22 @@ body {
     }
 
     &__back__img2 {
-        display: block;
-        top: 1400px;
-        right: 200px;
-        width: 160px;
-        height: 360px;
-        position: absolute;
-        background-image: url(../images/Group\ 39.png);
-        object-fit: cover;
-        object-position: center;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: 999;
+
+        @include mq(ss) {
+            display: block;
+            top: 1767px;
+            right: 200px;
+            width: 160px;
+            height: 360px;
+            position: absolute;
+            background-image: url(../images/Group\ 39.png);
+            object-fit: cover;
+            object-position: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 100;
+        }
     }
 }
 
@@ -338,10 +342,20 @@ body {
     &__background {
         top: 0px;
         left: -1200px;
-        background-color: #21AEAE;
+        background-color: $color-accent;
         position: absolute;
         width: 54%;
-        height: 200vh;
+        height: 156vh;
+        transform: skewX(-10deg);
+    }
+
+    &__background2 {
+        top: 1316px;
+        left: -352px;
+        background-color: $color-accent;
+        position: absolute;
+        width: 54%;
+        height: 156vh;
         transform: skewX(-10deg);
     }
 
@@ -349,19 +363,21 @@ body {
         display: flex;
         position: relative;
         width: 100%;
-        background-color: #010101;
+        background-color: $color-bak;
         height: 200vh;
     }
 
     &__outer2 {
         width: 100%;
-        background-color: #010101;
+        background-color: $color-bak;
         height: 150vh;
         position: relative;
     }
 
     &__about {
-        bottom: 0;
+        display: block;
+
+        top: 0;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -380,33 +396,47 @@ body {
             }
 
             &__img {
-                position: absolute;
-                top: 621px;
+                position: relative;
+                top: 300px;
                 left: -1100px;
                 max-width: 500px;
                 max-height: 500px;
                 margin: 80px auto 50px auto;
-                width: 80%;
                 height: auto;
                 object-fit: cover;
-                object-position: center;
+                object-position: left;
+                z-index: 101;
 
                 @include mq(ss) {
+                    position: absolute;
+                    top: 621px;
+                    left: -1100px;
+                    right: auto;
+                    max-width: 500px;
+                    max-height: 500px;
                     margin: 80px auto 50px auto;
                     width: 40vw;
                     height: 40vw;
                     object-fit: cover;
                     object-position: left;
+                    z-index: 101;
                 }
             }
         }
 
         &__text {
-            top: 821px;
-            width: 50%;
+            top: 920px;
             position: absolute;
             margin-left: 3vw;
-            left: 50%;
+
+
+            @include mq(ss) {
+                top: 821px;
+                width: 50%;
+                position: absolute;
+                margin-left: 3vw;
+                left: 50%;
+            }
 
             &__title {
                 font-size: 30px;
@@ -416,34 +446,50 @@ body {
 
 
                 span {
-                    margin-left: 20px;
                     font-size: 17px;
+
+                    @include mq(ss) {
+                        display: inline-block;
+                        margin-left: 20px;
+                    }
                 }
             }
 
             &__1 {
-                font-size: 24px;
+                font-size: 20px;
                 color: #fefefe;
                 margin-bottom: 10px;
+
+                @include mq(ss) {
+                    font-size: 24px;
+                }
             }
 
             &__2 {
-                font-size: 24px;
+                font-size: 20px;
                 color: #fefefe;
                 margin-bottom: 10px;
+
+                @include mq(ss) {
+                    font-size: 24px;
+                }
             }
 
             &__3 {
-                font-size: 24px;
+                font-size: 20px;
                 color: #fefefe;
                 margin-bottom: 10px;
+
+                @include mq(ss) {
+                    font-size: 24px;
+                }
             }
         }
 
         &__title {
             position: absolute;
             font-size: 80px;
-            color: #fefefe;
+            color: $color-White;
             top: 200px;
             left: 50%;
             transform: translateX(-50%);
@@ -458,7 +504,7 @@ body {
         &__title {
             position: absolute;
             font-size: 80px;
-            color: #21AEAE;
+            color: $color-White;
             top: 0;
             left: 50%;
             transform: translateX(-50%);
@@ -470,7 +516,7 @@ body {
             overflow: hidden;
             width: 100%;
             position: relative;
-            height: 100vh;
+            height: 800px;
         }
 
         &__next {
@@ -489,8 +535,8 @@ body {
             display: block;
             width: 30px;
             height: 30px;
-            border-top: solid 3px #828282;
-            border-right: solid 3px #828282;
+            border-top: solid 3px $color-accent;
+            border-right: solid 3px $color-accent;
             -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
             position: absolute;
@@ -519,8 +565,8 @@ body {
             display: block;
             width: 30px;
             height: 30px;
-            border-top: solid 3px #828282;
-            border-right: solid 3px #828282;
+            border-top: solid 3px $color-accent;
+            border-right: solid 3px $color-accent;
             -webkit-transform: rotate(-135deg);
             transform: rotate(-135deg);
             position: absolute;
@@ -563,7 +609,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 800px;
             width: 100%;
             max-width: 100vw;
 
@@ -575,26 +621,45 @@ body {
         .content1 {
             // width: 100%;
             // max-width: 81vw;
-            background-color: #ededed;
-            //background-image: url(../images/apc1.webp);
+            object-fit: cover;
+            object-position: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            //background-color: #ededed;
+            background-image: url(../images/apc1.webp);
         }
 
         .content2 {
             // width: 100%;
             // max-width: 119vw;
-            background-color: #cfcfcf;
+            object-fit: cover;
+            object-position: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            //background-color: #cfcfcf;
+            background-image: url(../images/apc1.webp);
         }
 
         .content3 {
             // width: 100%;
             // max-width: 81vw;
-            background-color: #9c9c9c;
+            object-fit: cover;
+            object-position: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            //background-color: #9c9c9c;
+            background-image: url(../images/apc1.webp);
         }
 
         .content4 {
             // width: 100%;
             // max-width: 119vw;
-            background-color: #636363;
+            object-fit: cover;
+            object-position: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            //background-color: #636363;
+            background-image: url(../images/apc1.webp);
         }
 
         .indicator {
@@ -613,7 +678,7 @@ body {
             border-radius: 50%;
             position: relative;
             list-style: none;
-            border: 1px #000 solid;
+            border: 1px $color-accent solid;
             margin-left: 15px;
             margin-right: 15px;
             cursor: pointer;
@@ -623,7 +688,7 @@ body {
             content: "";
             width: 20px;
             height: 20px;
-            border: 1px #000 solid;
+            border: 1px $color-White solid;
             border-radius: 50%;
             position: absolute;
             top: -9px;
@@ -632,7 +697,7 @@ body {
         }
 
         .list1 {
-            background-color: #010101;
+            background-color: $color-accent;
         }
     }
 }

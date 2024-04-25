@@ -16,22 +16,22 @@ function nextClick() {
         slide.classList.remove('slider1');
         slide.classList.add('slider2');
         list1.style.backgroundColor = 'transparent';
-        list2.style.backgroundColor = '#000';
+        list2.style.backgroundColor = '#21AEAE';
     } else if (slide.classList.contains('slider2') === true) {
         slide.classList.remove('slider2');
         slide.classList.add('slider3');
         list2.style.backgroundColor = 'transparent';
-        list3.style.backgroundColor = '#000';
+        list3.style.backgroundColor = '#21AEAE';
     } else if (slide.classList.contains('slider3') === true) {
         slide.classList.remove('slider3');
         slide.classList.add('slider4');
         list3.style.backgroundColor = 'transparent';
-        list4.style.backgroundColor = '#000';
+        list4.style.backgroundColor = '#21AEAE';
     } else {
         slide.classList.remove('slider4');
         slide.classList.add('slider1');
         list4.style.backgroundColor = 'transparent';
-        list1.style.backgroundColor = '#000';
+        list1.style.backgroundColor = '#21AEAE';
     }
 };
 
@@ -40,22 +40,22 @@ function prevClick() {
         slide.classList.remove('slider1');
         slide.classList.add('slider4');
         list1.style.backgroundColor = 'transparent';
-        list4.style.backgroundColor = '#000';
+        list4.style.backgroundColor = '#21AEAE';
     } else if (slide.classList.contains('slider2') === true) {
         slide.classList.remove('slider2');
         slide.classList.add('slider1');
         list2.style.backgroundColor = 'transparent';
-        list1.style.backgroundColor = '#000';
+        list1.style.backgroundColor = '#21AEAE';
     } else if (slide.classList.contains('slider3') === true) {
         slide.classList.remove('slider3');
         slide.classList.add('slider2');
         list3.style.backgroundColor = 'transparent';
-        list2.style.backgroundColor = '#000';
+        list2.style.backgroundColor = '#21AEAE';
     } else {
         slide.classList.remove('slider4');
         slide.classList.add('slider3');
         list4.style.backgroundColor = 'transparent';
-        list3.style.backgroundColor = '#000';
+        list3.style.backgroundColor = '#21AEAE';
     }
 };
 
@@ -71,7 +71,7 @@ function click1() {
     slide.classList.remove('slider2');
     slide.classList.remove('slider3');
     slide.classList.remove('slider4');
-    list1.style.backgroundColor = '#000';
+    list1.style.backgroundColor = '#21AEAE';
     list2.style.backgroundColor = 'transparent';
     list3.style.backgroundColor = 'transparent';
     list4.style.backgroundColor = 'transparent';
@@ -83,7 +83,7 @@ function click2() {
     slide.classList.remove('slider3');
     slide.classList.remove('slider4');
     list1.style.backgroundColor = 'transparent';
-    list2.style.backgroundColor = '#000';
+    list2.style.backgroundColor = '#21AEAE';
     list3.style.backgroundColor = 'transparent';
     list4.style.backgroundColor = 'transparent';
 }
@@ -95,7 +95,7 @@ function click3() {
     slide.classList.remove('slider4');
     list1.style.backgroundColor = 'transparent';
     list2.style.backgroundColor = 'transparent';
-    list3.style.backgroundColor = '#000';
+    list3.style.backgroundColor = '#21AEAE';
     list4.style.backgroundColor = 'transparent';
 }
 
@@ -107,5 +107,5 @@ function click4() {
     list1.style.backgroundColor = 'transparent';
     list2.style.backgroundColor = 'transparent';
     list3.style.backgroundColor = 'transparent';
-    list4.style.backgroundColor = '#000';
+    list4.style.backgroundColor = '#21AEAE';
 }
