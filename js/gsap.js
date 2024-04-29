@@ -90,7 +90,7 @@ gsap.utils.toArray('.main__background').forEach(wrap => {
             trigger: wrap,
             start: "top top ",
             toggleActions: "play none none reverse",
-            markers: true,
+            //markers: true,
         }
     })
 });
@@ -102,6 +102,36 @@ gsap.utils.toArray('.main__about__in__img').forEach(wrap => {
             start: "-280px",
             toggleActions: "play none none reverse",
             // markers: true,
+        }
+    })
+});
+
+
+//about
+
+gsap.utils.toArray('.about__main__img1').forEach(wrap => {
+    const y = wrap.getAttribute('data-y') || -400;
+
+    gsap.to(wrap, {
+        y: y,
+        scrollTrigger: {
+            trigger: wrap,
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: 0.1,
+            //markers: true
+        }
+    })
+});
+gsap.utils.toArray('.about__main__img2').forEach(wrap => {
+    gsap.to(wrap, {
+        rotate: 420,
+        scrollTrigger: {
+            trigger: wrap,
+            start: 'top bottom',
+            end: 'bottom -50% top',
+            scrub: 0.1,
+            markers: true
         }
     })
 });
