@@ -1128,4 +1128,10 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.works__header__title_wor {
+  margin-right: 0.07em;
+}
+.works__header__title_k {
+  letter-spacing: 0.1em;
+}
 /*# sourceMappingURL=style.css.map */
