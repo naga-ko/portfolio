@@ -375,11 +375,11 @@ body {
 }
 .main__background3 {
   top: 0px;
-  left: -413px;
+  left: -389px;
   background-color: #21AEAE;
   position: absolute;
   width: 54%;
-  height: 122vh;
+  height: 1000px;
   transform: skewX(-10deg);
 }
 .main__outer1 {
@@ -387,7 +387,7 @@ body {
   position: relative;
   width: 100%;
   background-color: #010101;
-  height: 200vh;
+  height: 1600px;
 }
 .main__outer2 {
   width: 100%;
@@ -768,7 +768,7 @@ body {
 
 .about__main {
   background-color: #010101;
-  height: 123vh;
+  height: 1150px;
 }
 .about__main__img1 {
   display: none;
@@ -1137,7 +1137,7 @@ body {
 
 .works__main {
   background-color: #010101;
-  height: 200vh;
+  height: 1700px;
 }
 .works__main__inner {
   width: min(93.75%, 2000px);
@@ -1158,7 +1158,9 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   height: 500px;
 }
 .works__main__title {

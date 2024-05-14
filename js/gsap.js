@@ -15,7 +15,7 @@ gsap.utils.toArray('.header__back__img1').forEach(wrap => {
     })
 });
 gsap.utils.toArray('.header__back__img2').forEach(wrap => {
-    const y = wrap.getAttribute('data-y') || -100;
+    const y = wrap.getAttribute('data-y') || -300;
 
     gsap.to(wrap, {
         y: y,
@@ -28,20 +28,7 @@ gsap.utils.toArray('.header__back__img2').forEach(wrap => {
         }
     })
 });
-gsap.utils.toArray('.header__back__img2').forEach(wrap => {
-    const y = wrap.getAttribute('data-y') || -100;
 
-    gsap.to(wrap, {
-        y: y,
-        scrollTrigger: {
-            trigger: wrap,
-            start: 'top bottom',
-            end: 'bottom top',
-            scrub: 0.1,
-            //markers: true
-        }
-    })
-});
 gsap.utils.toArray('.header__line1').forEach(wrap => {
     gsap.to(wrap, {
         y: -100,
