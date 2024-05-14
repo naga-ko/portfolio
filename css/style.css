@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -752,7 +753,7 @@ body {
 
 .about__header {
   background-color: #010101;
-  height: 100vh;
+  height: 820px;
 }
 .about__header__title {
   position: absolute;
@@ -1115,7 +1116,7 @@ body {
 
 .works__header {
   background-color: #010101;
-  height: 40vh;
+  height: 220px;
 }
 .works__header__title {
   position: absolute;
@@ -1171,5 +1172,30 @@ body {
 .works__main__title__sub {
   text-align: center;
   color: #fefefe;
+}
+.works__main__individual {
+  background-color: #010101;
+  height: 1700px;
+}
+.works__main__individual__inner {
+  width: min(93.75%, 2000px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.works__main__individual__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.works__main__individual__text {
+  color: #fefefe;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  width: 100%;
+}
+.works__main__individual__text tbody td {
+  border: 2px solid #fefefe;
+  border-collapse: collapse;
+  padding: 15px;
 }
 /*# sourceMappingURL=style.css.map */

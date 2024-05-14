@@ -40,6 +40,7 @@ margin-right: auto;
 
 body {
     overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -849,7 +850,7 @@ body {
 
 .about__header {
     background-color: #010101;
-    height: 100vh;
+    height: 820px;
 
     &__title {
         position: absolute;
@@ -1227,7 +1228,7 @@ body {
 
 .works__header {
     background-color: #010101;
-    height: 40vh;
+    height: 220px;
 
     &__title {
         position: absolute;
@@ -1285,6 +1286,36 @@ body {
         &__sub {
             text-align: center;
             color: $color-White;
+        }
+    }
+
+    &__individual {
+        background-color: #010101;
+        height: 1700px;
+
+        &__inner {
+            @include inner();
+        }
+
+        &__img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__text {
+            color: $color-White;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2px;
+            width: 100%;
+
+            tbody {
+                td {
+                    border: 2px solid $color-White;
+                    border-collapse: collapse;
+                    padding: 15px;
+                }
+            }
         }
     }
 }
