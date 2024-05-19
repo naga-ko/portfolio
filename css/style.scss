@@ -13,6 +13,7 @@ $breakpoints: (
     "cnt": "screen and (min-width: 800px)",
     "cent":"screen and (min-width: 1000px)",
     "mp":"screen and (min-width: 1112px)",
+    "mv":"screen and (min-width: 1266px)",
     "md": "screen and (min-width: 1366px)",
     "mm": "screen and (min-width: 1200px)",
     "ma": "screen and (min-width: 1400px)",
@@ -1024,7 +1025,7 @@ body {
                 font-size: 18px;
                 display: block;
 
-                @include mq(md) {
+                @include mq(mv) {
                     display: none;
                 }
             }
@@ -1032,7 +1033,7 @@ body {
     }
 
     &__text__pc {
-        @include mq(md) {
+        @include mq(mv) {
             position: relative;
         }
     }
@@ -1043,7 +1044,7 @@ body {
         &::before {
             content: "";
 
-            @include mq(md) {
+            @include mq(mv) {
                 display: block;
                 position: absolute;
                 top: -10px;
@@ -1055,7 +1056,7 @@ body {
             }
         }
 
-        @include mq(md) {
+        @include mq(mv) {
             display: block;
             position: absolute;
             top: 460px;
@@ -1077,7 +1078,7 @@ body {
     &__Btnlist {
         display: none;
 
-        @include mq(md) {
+        @include mq(mv) {
             display: block;
             position: absolute;
             top: 450px;
@@ -1271,10 +1272,10 @@ body {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        width: 80%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
-        height: 500px;
+        max-height: 500px;
     }
 
     &__title {

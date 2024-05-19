@@ -931,12 +931,12 @@ body {
   font-size: 18px;
   display: block;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1266px) {
   .about__main__text__mobile__sentence {
     display: none;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1266px) {
   .about__main__text__pc {
     position: relative;
   }
@@ -947,7 +947,7 @@ body {
 .about__main__textarea::before {
   content: "";
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1266px) {
   .about__main__textarea::before {
     display: block;
     position: absolute;
@@ -959,7 +959,7 @@ body {
     z-index: 98;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1266px) {
   .about__main__textarea {
     display: block;
     position: absolute;
@@ -980,7 +980,7 @@ body {
 .about__main__Btnlist {
   display: none;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1266px) {
   .about__main__Btnlist {
     display: block;
     position: absolute;
@@ -1159,10 +1159,10 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
+  max-height: 500px;
 }
 .works__main__title {
   text-align: center;
