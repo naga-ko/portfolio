@@ -951,8 +951,8 @@ body {
   .about__main__textarea::before {
     display: block;
     position: absolute;
-    top: -10px;
-    left: -10px;
+    top: -8px;
+    left: -8px;
     width: 62vw;
     height: 600px;
     border: 2px solid #fefefe;
