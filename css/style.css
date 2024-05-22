@@ -820,8 +820,8 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  height: 80vh;
   top: 220px;
+  height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: left;
