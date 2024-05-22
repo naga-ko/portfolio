@@ -911,6 +911,7 @@ body {
 
     &__img {
         width: 80%;
+        max-width: 570px;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -929,7 +930,6 @@ body {
 
         @include mq(cent) {
             width: 40%;
-
         }
     }
 
@@ -1072,6 +1072,12 @@ body {
             padding: 20px;
             font-size: 20px;
             color: $color-White;
+
+            h3 {
+                font-size: 28px;
+                margin: 0;
+                padding: 0;
+            }
         }
     }
 
@@ -1222,6 +1228,40 @@ body {
             }
         }
     }
+
+    &__Btn5 {
+        position: absolute;
+        top: 190px;
+        left: 0px;
+        width: 70px;
+        height: 70px;
+        background-image: url(../images/Btn1.png);
+        z-index: 100;
+
+        &__text {
+            width: 72px;
+            height: 42px;
+            color: $color-White;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 70px;
+            height: 70px;
+            background-image: url(../images/Btn1.png);
+            cursor: pointer;
+            transition: top 0.3s ease;
+
+            &:hover {
+                top: 0px;
+                left: 0px;
+                width: 71px;
+                height: 71px;
+            }
+        }
+    }
 }
 
 //works
@@ -1290,10 +1330,10 @@ body {
 
     &__individual {
         background-color: #010101;
-        height: 2100px;
 
         &__inner {
             @include inner();
+            padding-bottom: 60px;
         }
 
         &__img {
