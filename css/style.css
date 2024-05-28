@@ -1329,7 +1329,8 @@ body {
 .works__main__title {
   text-align: center;
   color: #fefefe;
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: normal;
 }
 .works__main__title__sub {
   text-align: center;
