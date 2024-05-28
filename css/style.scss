@@ -198,7 +198,7 @@ body {
     &__gnav {
         position: fixed;
         top: 20px;
-        right: 20px;
+        right: 10px;
         z-index: 100;
         width: 80px;
         height: 80px;
@@ -210,6 +210,11 @@ body {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+
+        @include mq(cent) {
+            top: 20px;
+            right: 20px;
+        }
 
         &__list {
             z-index: 100;
@@ -1054,6 +1059,7 @@ body {
                 height: 600px;
                 border: 2px solid $color-White;
                 z-index: 98;
+                max-width: 810px;
             }
         }
 
@@ -1066,6 +1072,7 @@ body {
             height: 600px;
             border: 2px solid $color-White;
             z-index: 99;
+            max-width: 810px;
         }
 
         &__text {
@@ -1091,10 +1098,18 @@ body {
             position: absolute;
             top: 450px;
             right: 12%;
-            width: 50%;
+            width: 100%;
             height: 600px;
             max-width: 168px;
             z-index: 99;
+        }
+
+        @include mq(md) {
+            right: 16%;
+        }
+
+        @include mq(ma) {
+            right: 18%;
         }
     }
 
@@ -1118,7 +1133,7 @@ body {
             height: 68px;
             background-image: url(../images/Btn1.png);
             cursor: pointer;
-            transition: top 0.3s ease;
+            transition: 0.3s ease;
 
             &:hover {
                 top: 0px;
@@ -1152,7 +1167,7 @@ body {
             height: 70px;
             background-image: url(../images/Btn1.png);
             cursor: pointer;
-            transition: top 0.3s ease;
+            transition: 0.3s ease;
 
             &:hover {
                 top: 0px;
@@ -1186,7 +1201,7 @@ body {
             height: 70px;
             background-image: url(../images/Btn1.png);
             cursor: pointer;
-            transition: top 0.3s ease;
+            transition: 0.3s ease;
 
             &:hover {
                 top: 0px;
@@ -1220,7 +1235,7 @@ body {
             height: 70px;
             background-image: url(../images/Btn1.png);
             cursor: pointer;
-            transition: top 0.3s ease;
+            transition: 0.3s ease;
 
             &:hover {
                 top: 0px;
@@ -1254,7 +1269,7 @@ body {
             height: 70px;
             background-image: url(../images/Btn1.png);
             cursor: pointer;
-            transition: top 0.3s ease;
+            transition: 0.3s ease;
 
             &:hover {
                 top: 0px;
@@ -1504,6 +1519,7 @@ body {
 
                 span {
                     border-bottom: $color-accent 3px solid;
+                    display: inline-block;
                 }
 
                 &__secondary {
