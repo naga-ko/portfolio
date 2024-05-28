@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     btn2.addEventListener("click", function () {
-        textarea.innerHTML = "<h3>　技術</h3><br>　HTML　CSS　Sass　JavaScript　WordPress　microCMS　GSAP<br>　Adobe Illustrator　Adobe Photoshop　Figma<br><br>　デザイン面<br>　Webサイトを観る側に立って、分かりやすいデザイン、<br>　飽きないデザインを心がけて制作しています。<br><br>　コーディング面<br>　Webサイトを作るのに困らない程度の知識があります。<br>　コーディング面では動きを作ることが好きです。";
+        textarea.innerHTML = "<h3>　技術</h3><br>　HTML　CSS　Sass　JavaScript　WordPress　microCMS　GSAP<br>　Adobe Illustrator　Adobe Photoshop　Figma<br><br>　デザイン面<br>　Webサイトをみる側に立って、分かりやすいデザイン、<br>　飽きないデザインを心がけて制作しています。<br><br>　コーディング面<br>　Webサイトを作るのに困らない程度の知識があります。<br>　効率の良い、見やすいコーディングをできるように勉強をしています。<br>　GSAPで動きを作ることが好きです。";
     });
 
     btn3.addEventListener("click", function () {
-        textarea.innerHTML = "<h3>　趣味</h3><br>・アニメ鑑賞<br>　最近だと転スラ、怪獣8号、物語シリーズ、俺レベなどを見ています。<br><br>・ゲーム<br>　VALORANT、minecraft、ツムツム、スマブラ、プロセカなど、<br>　いろんなジャンルやるのが好きです。<br><br>・スポーツ<br>　バドミントン、水泳、バレー、卓球などで体を動かすことが好きです。";
+        textarea.innerHTML = "<h3>　趣味</h3><br>・アニメ鑑賞<br>　最近だと転スラ、怪獣8号、物語シリーズ、俺レベなどを見ています。<br><br>・ゲーム<br>　VALORANT、minecraft、ツムツム、スマブラ、プロセカなど、<br>　いろんなジャンルやるのが好きです。<br><br>・スポーツ<br>　バドミントン、水泳、バレー、卓球などで体を動かすことが好きです。<br><br>・絵を描く<br>　0から描くことはあまりしませんが、<br>　基本的に模写やキャラなどのパーツを参考に組み立てて描くことが好きです。";
     });
 
     btn4.addEventListener("click", function () {
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     btn5.addEventListener("click", function () {
-        textarea.innerHTML = "<h3>　想い</h3><br>「デザイン」は";
+        textarea.innerHTML = "<h3>　想い</h3><br>　「デザインは設計」<br><br>　私は最初「デザイン」とは表面的なところを指す言葉だと思っていました。<br>　しかしトライデントコンピュータ専門学校で学んでからは問題を解決するために<br>　構造、仕様、計画、活動など、すべてを考えて設計することだと考えています。<br><br>　余談なのですがブルーロックという漫画にでてくるスナッフィーというキャラも<br>　「サッカーは仕事」「ゴールをデザイン（設計）する」という考え方で、<br>　この「パターンはダメだった」→「じゃあ次はこのパターン」「次はこれ」と<br>　次のことを考えて動く、将来のことを考えて仕事をするという生き方が<br>　私はとても賢い、そしてかっこいいと想っています。";
     });
 
     // btn6.addEventListener("click", function () {
