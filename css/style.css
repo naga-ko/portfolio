@@ -473,6 +473,9 @@ li {
   position: absolute;
   z-index: 102;
 }
+.main__about__in {
+  position: relative;
+}
 @media screen and (min-width: 610px) {
   .main__about__in {
     width: 50%;

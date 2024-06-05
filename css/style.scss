@@ -536,6 +536,8 @@ li {
         }
 
         &__in {
+            position: relative;
+
             @include mq(ss) {
                 width: 50%;
             }

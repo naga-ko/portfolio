@@ -1,4 +1,4 @@
-var cursor = $(".cursor"),
+var
     follower = $(".follower"),
     cWidth = 10, //カーソルの大きさ
     fWidth = 40, //フォロワーの大きさ
