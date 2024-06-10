@@ -1,47 +1,74 @@
-var
-    follower = $(".follower"),
-    cWidth = 10, //カーソルの大きさ
-    fWidth = 40, //フォロワーの大きさ
-    delay = 10, //数字を大きくするとフォロワーがより遅れて来る
-    mouseX = 0, //マウスのX座標
-    mouseY = 0, //マウスのY座標
-    posX = 0, //フォロワーのX座標
-    posY = 0; //フォロワーのY座標
+function getMousePos(e) {
+    return { x: e.clientX, y: e.clientY };
+}
 
-TweenMax.to({}, .001, {
-    repeat: -1,
-    onRepeat: function () {
-        posX += (mouseX - posX) / delay;
-        posY += (mouseY - posY) / delay;
+function moveCursor(e) {
+    const cursor = document.querySelector('.cursor');
+    const mousePos = getMousePos(e);
+    cursor.style.left = `${mousePos.x}px`;
+    cursor.style.top = `${mousePos.y}px`;
+}
 
-        TweenMax.set(follower, {
-            css: {
-                left: posX - (fWidth / 2),
-                top: posY - (fWidth / 2)
-            }
-        });
+function moveFollower(e) {
+    const follower = document.querySelector('.follower');
+    const mousePos = getMousePos(e);
+    follower.style.left = `${mousePos.x}px`;
+    follower.style.top = `${mousePos.y}px`;
+}
 
-        TweenMax.set(cursor, {
-            css: {
-                left: mouseX - (cWidth / 2),
-                top: mouseY - (cWidth / 2)
-            }
-        });
-    }
+const cursorElement = document.querySelector('.cursor');
+const followerElement = document.querySelector('.follower');
+const contentElements = document.querySelectorAll('.content');
+
+function moveElements(e) {
+    const mousePos = { x: e.clientX, y: e.clientY };
+    cursorElement.style.left = `${mousePos.x}px`;
+    cursorElement.style.top = `${mousePos.y}px`;
+    followerElement.style.left = `${mousePos.x}px`;
+    followerElement.style.top = `${mousePos.y}px`;
+}
+
+document.addEventListener('mousemove', moveElements);
+
+function addHoverClass() {
+    cursorElement.classList.add('hover');
+    followerElement.classList.add('hover');
+    setTimeout(() => {
+        cursorElement.style.transition = 'none';
+        followerElement.style.transition = 'none';
+    }, 400);
+}
+
+function removeHoverClass() {
+    cursorElement.classList.remove('hover');
+    followerElement.classList.remove('hover');
+    cursorElement.style.transition = '';
+    followerElement.style.transition = '';
+}
+
+document.querySelector('.main__about__in__img').addEventListener('mouseenter', addHoverClass);
+document.querySelector('.main__about__in__img').addEventListener('mouseleave', removeHoverClass);
+
+function addContentHoverClass() {
+    cursorElement.classList.add('hover');
+    followerElement.classList.add('hover');
+    setTimeout(() => {
+        cursorElement.style.transition = 'none';
+        followerElement.style.transition = 'none';
+    }, 400);
+}
+
+function removeContentHoverClass() {
+    cursorElement.classList.remove('hover');
+    followerElement.classList.remove('hover');
+    cursorElement.style.transition = '';
+    followerElement.style.transition = '';
+}
+
+contentElements.forEach(content => {
+    content.addEventListener('mouseenter', addContentHoverClass);
+    content.addEventListener('mouseleave', removeContentHoverClass);
 });
 
-$(document).on("mousemove", function (e) {
-    mouseX = e.pageX;
-    mouseY = e.pageY;
-});
 
-$("a").on({
-    "mouseenter": function () {
-        cursor.addClass("is-active");
-        follower.addClass("is-active");
-    },
-    "mouseleave": function () {
-        cursor.removeClass("is-active");
-        follower.removeClass("is-active");
-    }
-});
+///
