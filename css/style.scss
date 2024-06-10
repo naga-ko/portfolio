@@ -698,7 +698,7 @@ li {
             bottom: 45%;
             transition: all 0.3s;
             z-index: 10;
-            cursor: pointer;
+            // cursor: pointer;
         }
 
         &__back::after {
@@ -851,7 +851,7 @@ li {
             border: 1px $color-accent solid;
             margin-left: 15px;
             margin-right: 15px;
-            cursor: pointer;
+            // cursor: pointer;
         }
 
         li:after {
