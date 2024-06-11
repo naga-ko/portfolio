@@ -51,6 +51,10 @@ li {
   border: 2px solid #21AEAE;
 }
 
+.follower.color-change {
+  border: 2px solid #21AEAE;
+}
+
 .cursor.hover,
 .follower.hover {
   position: fixed;
@@ -212,13 +216,22 @@ li {
 .header__gnav__list {
   z-index: 100;
 }
-.header__gnav span {
+.header__gnav__list span {
   display: block;
   width: 30px;
   height: 4px;
   background-color: #21AEAE;
   margin: 4px 0;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.header__gnav__list.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.header__gnav__list.open span:nth-child(2) {
+  opacity: 0;
+}
+.header__gnav__list.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 .header__menu {
   position: fixed;

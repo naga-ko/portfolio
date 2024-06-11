@@ -92,6 +92,10 @@ li {
     border: 2px solid #21AEAE;
 }
 
+.follower.color-change {
+    border: 2px solid #21AEAE;
+}
+
 .cursor.hover,
 .follower.hover {
     position: fixed;
@@ -250,34 +254,31 @@ li {
 
         &__list {
             z-index: 100;
-            // cursor: pointer;
+            //cursor: pointer;
 
-            // &:hover span:nth-child(1) {
-            //     transition: .4s all;
-            //     transform: translateY(8px);
-            // }
+            span {
+                display: block;
+                width: 30px;
+                height: 4px;
+                background-color: $color-accent;
+                margin: 4px 0;
+                transition: transform 0.3s ease, background-color 0.3s ease;
+            }
 
-            // &:hover span:nth-child(2) {
-            //     transition: 2s all;
-            //     opacity: 0;
-            // }
+            &.open span:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
 
-            // &:hover span:nth-child(3) {
-            //     transition: .4s all;
-            //     transform: translateY(-8px);
-            // }
+            &.open span:nth-child(2) {
+                opacity: 0;
+            }
+
+            &.open span:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
         }
-
-        span {
-            display: block;
-            width: 30px;
-            height: 4px;
-            background-color: $color-accent;
-            margin: 4px 0;
-            transition: transform 0.3s ease;
-        }
-
     }
+
 
     &__menu {
         position: fixed;

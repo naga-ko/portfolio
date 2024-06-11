@@ -1,74 +1,80 @@
-function getMousePos(e) {
-    return { x: e.clientX, y: e.clientY };
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const cursorElement = document.querySelector('.cursor');
+    const followerElement = document.querySelector('.follower');
+    const contentElements = document.querySelectorAll('.content a');
+    const gnavIcon = document.querySelector('.header__gnav__list');
+    const menu = document.querySelector('.header__menu');
+    const mainAboutImg = document.querySelector('.main__about__in__img');
 
-function moveCursor(e) {
-    const cursor = document.querySelector('.cursor');
-    const mousePos = getMousePos(e);
-    cursor.style.left = `${mousePos.x}px`;
-    cursor.style.top = `${mousePos.y}px`;
-}
+    function getMousePos(e) {
+        return { x: e.clientX, y: e.clientY };
+    }
 
-function moveFollower(e) {
-    const follower = document.querySelector('.follower');
-    const mousePos = getMousePos(e);
-    follower.style.left = `${mousePos.x}px`;
-    follower.style.top = `${mousePos.y}px`;
-}
+    function moveElements(e) {
+        const mousePos = { x: e.clientX, y: e.clientY };
+        const cursorRect = cursorElement.getBoundingClientRect();
+        const followerRect = followerElement.getBoundingClientRect();
 
-const cursorElement = document.querySelector('.cursor');
-const followerElement = document.querySelector('.follower');
-const contentElements = document.querySelectorAll('.content a');
+        cursorElement.style.left = `${mousePos.x - cursorRect.width / 2}px`;
+        cursorElement.style.top = `${mousePos.y - cursorRect.height / 2}px`;
+        followerElement.style.left = `${mousePos.x - followerRect.width / 2}px`;
+        followerElement.style.top = `${mousePos.y - followerRect.height / 2}px`;
+    }
 
-function moveElements(e) {
-    const mousePos = { x: e.clientX, y: e.clientY };
-    const cursorRect = cursorElement.getBoundingClientRect();
-    const followerRect = followerElement.getBoundingClientRect();
+    document.addEventListener('mousemove', moveElements);
 
-    cursorElement.style.left = `${mousePos.x - cursorRect.width / 2}px`;
-    cursorElement.style.top = `${mousePos.y - cursorRect.height / 2}px`;
-    followerElement.style.left = `${mousePos.x - followerRect.width / 2}px`;
-    followerElement.style.top = `${mousePos.y - followerRect.height / 2}px`;
-}
+    function addHoverClass() {
+        cursorElement.classList.add('hover');
+        followerElement.classList.add('hover');
+        setTimeout(() => {
+            cursorElement.style.transition = 'none';
+            followerElement.style.transition = 'none';
+        }, 400);
+    }
 
-document.addEventListener('mousemove', moveElements);
+    function removeHoverClass() {
+        cursorElement.classList.remove('hover');
+        followerElement.classList.remove('hover');
+        cursorElement.style.transition = '';
+        followerElement.style.transition = '';
+    }
 
-function addHoverClass() {
-    cursorElement.classList.add('hover');
-    followerElement.classList.add('hover');
-    setTimeout(() => {
-        cursorElement.style.transition = 'none';
-        followerElement.style.transition = 'none';
-    }, 400);
-}
+    function addContentHoverClass() {
+        cursorElement.classList.add('hover');
+        followerElement.classList.add('hover');
+        setTimeout(() => {
+            cursorElement.style.transition = 'none';
+            followerElement.style.transition = 'none';
+        }, 400);
+    }
 
-function removeHoverClass() {
-    cursorElement.classList.remove('hover');
-    followerElement.classList.remove('hover');
-    cursorElement.style.transition = '';
-    followerElement.style.transition = '';
-}
+    function removeContentHoverClass() {
+        cursorElement.classList.remove('hover');
+        followerElement.classList.remove('hover');
+        cursorElement.style.transition = '';
+        followerElement.style.transition = '';
+    }
 
-document.querySelector('.main__about__in__img').addEventListener('mouseenter', addHoverClass);
-document.querySelector('.main__about__in__img').addEventListener('mouseleave', removeHoverClass);
+    contentElements.forEach(content => {
+        content.addEventListener('mouseenter', addContentHoverClass);
+        content.addEventListener('mouseleave', removeContentHoverClass);
+    });
 
-function addContentHoverClass() {
-    cursorElement.classList.add('hover');
-    followerElement.classList.add('hover');
-    setTimeout(() => {
-        cursorElement.style.transition = 'none';
-        followerElement.style.transition = 'none';
-    }, 400);
-}
+    if (mainAboutImg) {
+        mainAboutImg.addEventListener('mouseenter', addHoverClass);
+        mainAboutImg.addEventListener('mouseleave', removeHoverClass);
+    }
 
-function removeContentHoverClass() {
-    cursorElement.classList.remove('hover');
-    followerElement.classList.remove('hover');
-    cursorElement.style.transition = '';
-    followerElement.style.transition = '';
-}
+    function toggleFollowerColor() {
+        followerElement.classList.toggle('color-change');
+    }
 
-contentElements.forEach(content => {
-    content.addEventListener('mouseenter', addContentHoverClass);
-    content.addEventListener('mouseleave', removeContentHoverClass);
+    gnavIcon.addEventListener('click', () => {
+        gnavIcon.classList.toggle('open');
+        menu.classList.toggle('open');
+        toggleFollowerColor();
+    });
+
+    gnavIcon.addEventListener('mouseenter', addHoverClass);
+    gnavIcon.addEventListener('mouseleave', removeHoverClass);
 });
