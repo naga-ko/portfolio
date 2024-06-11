@@ -69,6 +69,3 @@ contentElements.forEach(content => {
     content.addEventListener('mouseenter', addContentHoverClass);
     content.addEventListener('mouseleave', removeContentHoverClass);
 });
-
-
-///
