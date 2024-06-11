@@ -1352,6 +1352,9 @@ li {
   margin-right: auto;
   margin-bottom: 100px;
 }
+.works__main__content a {
+  cursor: none;
+}
 .works__main__img {
   -o-object-fit: cover;
      object-fit: cover;

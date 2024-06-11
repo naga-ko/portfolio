@@ -1482,6 +1482,10 @@ li {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 100px;
+
+        a {
+            cursor: none;
+        }
     }
 
     &__img {
