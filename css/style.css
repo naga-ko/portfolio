@@ -47,6 +47,13 @@ li {
   transition: width 0.3s ease, height 0.3s ease, border-width 0.3s ease, border-color 0.4s ease;
 }
 
+.follower.large {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-width: 4px;
+}
+
 .follower.hover {
   border: 2px solid #21AEAE;
 }
@@ -211,19 +218,6 @@ li {
 }
 .header__gnav__list {
   z-index: 100;
-  cursor: pointer;
-}
-.header__gnav__list:hover span:nth-child(1) {
-  transition: 0.4s all;
-  transform: translateY(8px);
-}
-.header__gnav__list:hover span:nth-child(2) {
-  transition: 2s all;
-  opacity: 0;
-}
-.header__gnav__list:hover span:nth-child(3) {
-  transition: 0.4s all;
-  transform: translateY(-8px);
 }
 .header__gnav span {
   display: block;
@@ -694,6 +688,7 @@ li {
   width: 80%;
   height: 80%;
   background-image: url(../images/apc1.webp);
+  cursor: none;
 }
 .main__works .content2 a {
   -o-object-fit: cover;
@@ -705,6 +700,7 @@ li {
   width: 80%;
   height: 80%;
   background-image: url(../images/nkblog.webp);
+  cursor: none;
 }
 .main__works .content3 a {
   -o-object-fit: cover;
@@ -716,6 +712,7 @@ li {
   width: 80%;
   height: 80%;
   background-image: url();
+  cursor: none;
 }
 .main__works .content4 a {
   -o-object-fit: cover;
@@ -727,6 +724,7 @@ li {
   width: 80%;
   height: 80%;
   background-image: url();
+  cursor: none;
 }
 .main__works .indicator {
   width: 100%;

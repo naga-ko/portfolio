@@ -88,6 +88,13 @@ li {
     ;
 }
 
+.follower.large {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-width: 4px;
+}
+
 .follower.hover {
     border: 2px solid #21AEAE;
 }
@@ -250,22 +257,22 @@ li {
 
         &__list {
             z-index: 100;
-            cursor: pointer;
+            // cursor: pointer;
 
-            &:hover span:nth-child(1) {
-                transition: .4s all;
-                transform: translateY(8px);
-            }
+            // &:hover span:nth-child(1) {
+            //     transition: .4s all;
+            //     transform: translateY(8px);
+            // }
 
-            &:hover span:nth-child(2) {
-                transition: 2s all;
-                opacity: 0;
-            }
+            // &:hover span:nth-child(2) {
+            //     transition: 2s all;
+            //     opacity: 0;
+            // }
 
-            &:hover span:nth-child(3) {
-                transition: .4s all;
-                transform: translateY(-8px);
-            }
+            // &:hover span:nth-child(3) {
+            //     transition: .4s all;
+            //     transform: translateY(-8px);
+            // }
         }
 
         span {
@@ -780,6 +787,7 @@ li {
                 width: 80%;
                 height: 80%;
                 background-image: url(../images/apc1.webp);
+                cursor: none;
 
                 &:hover {
                     //cursor: url(../images/view.cur), auto;
@@ -796,6 +804,7 @@ li {
                 width: 80%;
                 height: 80%;
                 background-image: url(../images/nkblog.webp);
+                cursor: none;
 
                 &:hover {
                     //cursor: url(../images/view.cur), auto;
@@ -812,6 +821,7 @@ li {
                 width: 80%;
                 height: 80%;
                 background-image: url();
+                cursor: none;
 
                 &:hover {
                     //cursor: url(../images/view.cur), auto;
@@ -828,6 +838,7 @@ li {
                 width: 80%;
                 height: 80%;
                 background-image: url();
+                cursor: none;
 
                 &:hover {
                     //cursor: url(../images/view.cur), auto;

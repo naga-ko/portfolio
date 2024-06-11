@@ -18,14 +18,17 @@ function moveFollower(e) {
 
 const cursorElement = document.querySelector('.cursor');
 const followerElement = document.querySelector('.follower');
-const contentElements = document.querySelectorAll('.content');
+const contentElements = document.querySelectorAll('.content a');
 
 function moveElements(e) {
     const mousePos = { x: e.clientX, y: e.clientY };
-    cursorElement.style.left = `${mousePos.x}px`;
-    cursorElement.style.top = `${mousePos.y}px`;
-    followerElement.style.left = `${mousePos.x}px`;
-    followerElement.style.top = `${mousePos.y}px`;
+    const cursorRect = cursorElement.getBoundingClientRect();
+    const followerRect = followerElement.getBoundingClientRect();
+
+    cursorElement.style.left = `${mousePos.x - cursorRect.width / 2}px`;
+    cursorElement.style.top = `${mousePos.y - cursorRect.height / 2}px`;
+    followerElement.style.left = `${mousePos.x - followerRect.width / 2}px`;
+    followerElement.style.top = `${mousePos.y - followerRect.height / 2}px`;
 }
 
 document.addEventListener('mousemove', moveElements);
