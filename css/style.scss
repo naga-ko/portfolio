@@ -173,6 +173,14 @@ li {
         @include mq(cent) {
             font-size: 8em;
         }
+
+        &-n {
+            letter-spacing: -2px;
+        }
+
+        &-a {
+            letter-spacing: 4px;
+        }
     }
 
     &__title2 {
@@ -201,6 +209,14 @@ li {
         @include mq(cent) {
             font-size: 8em;
         }
+
+        &-k {
+            letter-spacing: 2px;
+        }
+
+        &-k2 {
+            letter-spacing: 5px;
+        }
     }
 
     &__title3 {
@@ -228,6 +244,26 @@ li {
 
         @include mq(cent) {
             font-size: 8em;
+        }
+
+        &-r {
+            letter-spacing: -3px;
+        }
+
+        &-t {
+            letter-spacing: -2px;
+        }
+
+        &-o1 {
+            letter-spacing: -9px;
+        }
+
+        &-f {
+            letter-spacing: -3px;
+        }
+
+        &-l {
+            letter-spacing: 1px;
         }
     }
 
