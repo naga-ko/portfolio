@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const gnavIcon = document.querySelector('.header__gnav__list');
     const menu = document.querySelector('.header__menu');
     const mainAboutImg = document.querySelector('.main__about__in__img');
+    const worksLink = document.querySelector('.works__main__individual__table__url__2__link');
 
     function getMousePos(e) {
         return { x: e.clientX, y: e.clientY };
@@ -77,4 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     gnavIcon.addEventListener('mouseenter', addHoverClass);
     gnavIcon.addEventListener('mouseleave', removeHoverClass);
+
+    if (worksLink) {
+        worksLink.addEventListener('mouseenter', addHoverClass);
+        worksLink.addEventListener('mouseleave', removeHoverClass);
+    }
 });
