@@ -394,7 +394,6 @@ li {
         background-position: -745px 850px;
         -webkit-background-clip: background;
         color: white;
-        /* 文字色を白色(不透明)にする：IE用 */
         transform: skewX(-10deg);
     }
 
@@ -405,7 +404,6 @@ li {
         background-position: -875px 850px;
         -webkit-background-clip: background;
         color: white;
-        /* 文字色を白色(不透明)にする：IE用 */
         transform: skewX(-10deg);
     }
 
@@ -416,7 +414,6 @@ li {
         background-position: -1005px 850px;
         -webkit-background-clip: background;
         color: white;
-        /* 文字色を白色(不透明)にする：IE用 */
         transform: skewX(-10deg);
     }
 
@@ -591,10 +588,6 @@ li {
                     object-fit: cover;
                     object-position: left;
                     z-index: 101;
-                }
-
-                &:hover {
-                    //cursor: url(../images/about.cur), auto;
                 }
             }
         }
@@ -819,10 +812,6 @@ li {
                 height: 80%;
                 background-image: url(../images/apc1.webp);
                 cursor: none;
-
-                &:hover {
-                    //cursor: url(../images/view.cur), auto;
-                }
             }
         }
 
@@ -836,10 +825,6 @@ li {
                 height: 80%;
                 background-image: url(../images/nkblog.webp);
                 cursor: none;
-
-                &:hover {
-                    //cursor: url(../images/view.cur), auto;
-                }
             }
         }
 
@@ -853,10 +838,6 @@ li {
                 height: 80%;
                 background-image: url();
                 cursor: none;
-
-                &:hover {
-                    //cursor: url(../images/view.cur), auto;
-                }
             }
         }
 
@@ -870,10 +851,6 @@ li {
                 height: 80%;
                 background-image: url();
                 cursor: none;
-
-                &:hover {
-                    //cursor: url(../images/view.cur), auto;
-                }
             }
         }
 
@@ -1581,6 +1558,7 @@ li {
                     &__link {
                         color: $color-accent;
                         border-bottom: $color-accent 1px solid;
+                        cursor: none;
                     }
                 }
             }

@@ -331,7 +331,6 @@ li {
   background-position: -745px 850px;
   -webkit-background-clip: background;
   color: white;
-  /* 文字色を白色(不透明)にする：IE用 */
   transform: skewX(-10deg);
 }
 .header__line2 {
@@ -341,7 +340,6 @@ li {
   background-position: -875px 850px;
   -webkit-background-clip: background;
   color: white;
-  /* 文字色を白色(不透明)にする：IE用 */
   transform: skewX(-10deg);
 }
 .header__line3 {
@@ -351,7 +349,6 @@ li {
   background-position: -1005px 850px;
   -webkit-background-clip: background;
   color: white;
-  /* 文字色を白色(不透明)にする：IE用 */
   transform: skewX(-10deg);
 }
 .header__back__img1 {
@@ -1433,6 +1430,7 @@ li {
 .works__main__individual__table__url__2__link {
   color: #21AEAE;
   border-bottom: #21AEAE 1px solid;
+  cursor: none;
 }
 .works__main__individual__text {
   color: #fefefe;
