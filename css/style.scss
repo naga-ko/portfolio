@@ -148,12 +148,7 @@ li {
     }
 
     &__title1 {
-        //background-image: url(../images/main__about__img1.webp);
-        //background-position: bottom -638px left;
-        //-webkit-background-clip: text;
         color: white;
-        //文字色を白色(不透明)にする：IE用
-        //-webkit-text-fill-color: transparent;
         font-family: "Julius Sans One", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -184,12 +179,7 @@ li {
     }
 
     &__title2 {
-        //background-image: url(../images/main__about__img1.webp);
-        //background-position: bottom -543px left;
-        //-webkit-background-clip: text;
         color: $color-White;
-        /* 文字色を白色(不透明)にする：IE用 */
-        //-webkit-text-fill-color: transparent;
         font-family: "Julius Sans One", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -220,12 +210,7 @@ li {
     }
 
     &__title3 {
-        //background-image: url(../images/main__about__img1.webp);
-        //background-position: bottom -420px left;
-        //-webkit-background-clip: text;
         color: white;
-        /* 文字色を白色(不透明)にする：IE用 */
-        // -webkit-text-fill-color: transparent;
         font-family: "Julius Sans One", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -290,7 +275,6 @@ li {
 
         &__list {
             z-index: 100;
-            //cursor: pointer;
 
             span {
                 display: block;
@@ -320,7 +304,6 @@ li {
         position: fixed;
         top: 0px;
         right: -100%;
-        /* Initially hide the menu off the screen */
         width: 200px;
         height: 100vh;
         background-color: $color-White;
