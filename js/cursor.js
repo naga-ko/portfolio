@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const aboutMainBtn3 = document.querySelector('.about__main__Btn3__text');
     const aboutMainBtn4 = document.querySelector('.about__main__Btn4__text');
     const aboutMainBtn5 = document.querySelector('.about__main__Btn5__text');
+    const aboutMainText4 = document.querySelector('.about__main__text__4');
 
     function getMousePos(e) {
         return { x: e.clientX, y: e.clientY };
@@ -108,5 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (aboutMainBtn5) {
         aboutMainBtn5.addEventListener('mouseenter', addHoverClass);
         aboutMainBtn5.addEventListener('mouseleave', removeHoverClass);
+    }
+
+    if (aboutMainText4) {
+        aboutMainText4.addEventListener('mouseenter', addHoverClass);
+        aboutMainText4.addEventListener('mouseleave', removeHoverClass);
     }
 });

@@ -902,7 +902,7 @@ li {
 }
 .about__main__text__title {
   font-size: 30px;
-  color: #21AEAE;
+  color: #fefefe;
   font-weight: normal;
   margin-bottom: 0px;
 }
@@ -925,7 +925,7 @@ li {
   display: block;
   font-size: 17px;
   display: inline-block;
-  color: #21AEAE;
+  color: #fefefe;
   margin: 0;
 }
 @media screen and (min-width: 610px) {
@@ -962,6 +962,21 @@ li {
   .about__main__text__3 {
     font-size: 24px;
   }
+}
+.about__main__text__4 {
+  font-size: 20px;
+  color: #21AEAE;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 610px) {
+  .about__main__text__4 {
+    font-size: 24px;
+  }
+}
+.about__main__text-link {
+  display: block;
+  cursor: none;
+  max-width: 75px;
 }
 .about__main__text__mobile {
   top: 1300px;
@@ -1016,7 +1031,7 @@ li {
   .about__main__textarea {
     display: block;
     position: absolute;
-    top: 460px;
+    top: 480px;
     left: 12%;
     width: 62vw;
     height: 600px;
@@ -1044,7 +1059,7 @@ li {
   .about__main__Btnlist {
     display: block;
     position: absolute;
-    top: 450px;
+    top: 470px;
     right: 12%;
     width: 100%;
     height: 600px;

@@ -65,7 +65,6 @@ gsap.utils.toArray('.header__line3').forEach(wrap => {
             start: "bottom 80%",
             toggleActions: "play none none reverse",
             scrub: true,
-            //markers: true
         }
     })
 });
@@ -77,7 +76,6 @@ gsap.utils.toArray('.main__background').forEach(wrap => {
             trigger: wrap,
             start: "top top ",
             toggleActions: "play none none reverse",
-            //markers: true,
         }
     })
 });
@@ -88,7 +86,6 @@ gsap.utils.toArray('.main__about__in__img').forEach(wrap => {
             trigger: wrap,
             start: "-280px",
             toggleActions: "play none none reverse",
-            // markers: true,
         }
     })
 });
@@ -106,7 +103,6 @@ gsap.utils.toArray('.about__main__img1').forEach(wrap => {
             start: 'top bottom',
             end: 'bottom top',
             scrub: 0.1,
-            //markers: true
         }
     })
 });

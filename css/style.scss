@@ -987,7 +987,7 @@ li {
 
         &__title {
             font-size: 30px;
-            color: #21AEAE;
+            color: $color-White;
             font-weight: normal;
             margin-bottom: 0px;
 
@@ -1011,7 +1011,7 @@ li {
                 display: block;
                 font-size: 17px;
                 display: inline-block;
-                color: #21AEAE;
+                color: $color-White;
                 margin: 0;
 
                 @include mq(ss) {
@@ -1048,6 +1048,22 @@ li {
             @include mq(ss) {
                 font-size: 24px;
             }
+        }
+
+        &__4 {
+            font-size: 20px;
+            color: $color-accent;
+            margin-bottom: 10px;
+
+            @include mq(ss) {
+                font-size: 24px;
+            }
+        }
+
+        &-link {
+            display: block;
+            cursor: none;
+            max-width: 75px;
         }
 
         &__mobile {
@@ -1104,7 +1120,7 @@ li {
         @include mq(mv) {
             display: block;
             position: absolute;
-            top: 460px;
+            top: 480px;
             left: 12%;
             width: 62vw;
             height: 600px;
@@ -1134,7 +1150,7 @@ li {
         @include mq(mv) {
             display: block;
             position: absolute;
-            top: 450px;
+            top: 470px;
             right: 12%;
             width: 100%;
             height: 600px;
