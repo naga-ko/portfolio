@@ -1480,7 +1480,6 @@ li {
 
 .works__main {
     background-color: #010101;
-    height: 1700px;
 
     &__inner {
         @include inner();
@@ -1490,7 +1489,7 @@ li {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 100px;
+        padding-bottom: 100px;
 
         a {
             cursor: none;
