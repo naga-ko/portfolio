@@ -715,7 +715,7 @@ li {
   background-image: url(../images/tenki.webp);
 }
 .main .main__works .content5 a {
-  background-image: url(../images/tenki.webp);
+  background-image: url();
 }
 .main .main__works .indicator {
   width: 100%;
@@ -763,11 +763,12 @@ li {
   font-weight: bold;
   font-size: 10px;
 }
-.main .about__header {
+
+.about__header {
   background-color: #010101;
   height: 820px;
 }
-.main .about__header__title {
+.about__header__title {
   position: absolute;
   font-size: 80px;
   color: #fefefe;
@@ -778,15 +779,16 @@ li {
   font-weight: 400;
   font-style: normal;
 }
-.main .about__main {
+
+.about__main {
   background-color: #010101;
   height: 1150px;
 }
-.main .about__main__img1 {
+.about__main__img1 {
   display: none;
 }
 @media screen and (min-width: 610px) {
-  .main .about__main__img1 {
+  .about__main__img1 {
     display: block;
     top: 1300px;
     right: 20px;
@@ -804,11 +806,11 @@ li {
     z-index: 98;
   }
 }
-.main .about__main__img2 {
+.about__main__img2 {
   display: none;
 }
 @media screen and (min-width: 610px) {
-  .main .about__main__img2 {
+  .about__main__img2 {
     display: block;
     top: -50px;
     left: -800px;
@@ -826,7 +828,7 @@ li {
     z-index: 98;
   }
 }
-.main .about__main__img {
+.about__main__img {
   width: 80%;
   max-width: 570px;
   position: absolute;
@@ -844,44 +846,44 @@ li {
   z-index: 99;
 }
 @media screen and (min-width: 610px) {
-  .main .about__main__img {
+  .about__main__img {
     width: 50%;
   }
 }
 @media screen and (min-width: 1000px) {
-  .main .about__main__img {
+  .about__main__img {
     width: 40%;
   }
 }
-.main .about__main__text {
+.about__main__text {
   top: 1000px;
   position: absolute;
   left: 12%;
   width: 80%;
   max-width: 590px;
 }
-.main .about__main__text__title {
+.about__main__text__title {
   font-size: 30px;
   color: #fefefe;
   font-weight: normal;
   margin-bottom: 0px;
 }
 @media screen and (min-width: 610px) {
-  .main .about__main__text__title {
+  .about__main__text__title {
     margin-bottom: 30px;
   }
 }
-.main .about__main__text__title span {
+.about__main__text__title span {
   display: none;
 }
 @media screen and (min-width: 610px) {
-  .main .about__main__text__title span {
+  .about__main__text__title span {
     font-size: 17px;
     display: inline-block;
     margin-left: 20px;
   }
 }
-.main .about__main__text__title__Eng {
+.about__main__text__title__Eng {
   display: block;
   font-size: 17px;
   display: inline-block;
@@ -889,56 +891,56 @@ li {
   margin: 0;
 }
 @media screen and (min-width: 610px) {
-  .main .about__main__text__title__Eng {
+  .about__main__text__title__Eng {
     display: none;
   }
 }
-.main .about__main__text__1 {
+.about__main__text__1 {
   font-size: 20px;
   color: #fefefe;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 610px) {
-  .main .about__main__text__1 {
+  .about__main__text__1 {
     font-size: 24px;
   }
 }
-.main .about__main__text__2 {
+.about__main__text__2 {
   font-size: 20px;
   color: #fefefe;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 610px) {
-  .main .about__main__text__2 {
+  .about__main__text__2 {
     font-size: 24px;
   }
 }
-.main .about__main__text__3 {
+.about__main__text__3 {
   font-size: 20px;
   color: #fefefe;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 610px) {
-  .main .about__main__text__3 {
+  .about__main__text__3 {
     font-size: 24px;
   }
 }
-.main .about__main__text__4 {
+.about__main__text__4 {
   font-size: 20px;
   color: #21AEAE;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 610px) {
-  .main .about__main__text__4 {
+  .about__main__text__4 {
     font-size: 24px;
   }
 }
-.main .about__main__text-link {
+.about__main__text-link {
   display: block;
   cursor: none;
   max-width: 75px;
 }
-.main .about__main__text__mobile {
+.about__main__text__mobile {
   top: 1300px;
   position: absolute;
   left: 50%;
@@ -948,34 +950,34 @@ li {
   display: block;
 }
 @media screen and (min-width: 1366px) {
-  .main .about__main__text__mobile {
+  .about__main__text__mobile {
     display: none;
   }
 }
-.main .about__main__text__mobile__sentence {
+.about__main__text__mobile__sentence {
   margin-top: 40px;
   color: #fefefe;
   font-size: 18px;
   display: block;
 }
 @media screen and (min-width: 1266px) {
-  .main .about__main__text__mobile__sentence {
+  .about__main__text__mobile__sentence {
     display: none;
   }
 }
 @media screen and (min-width: 1266px) {
-  .main .about__main__text__pc {
+  .about__main__text__pc {
     position: relative;
   }
 }
-.main .about__main__textarea {
+.about__main__textarea {
   display: none;
 }
-.main .about__main__textarea::before {
+.about__main__textarea::before {
   content: "";
 }
 @media screen and (min-width: 1266px) {
-  .main .about__main__textarea::before {
+  .about__main__textarea::before {
     display: block;
     position: absolute;
     top: -8px;
@@ -988,7 +990,7 @@ li {
   }
 }
 @media screen and (min-width: 1266px) {
-  .main .about__main__textarea {
+  .about__main__textarea {
     display: block;
     position: absolute;
     top: 480px;
@@ -1000,23 +1002,23 @@ li {
     max-width: 810px;
   }
 }
-.main .about__main__textarea__text {
+.about__main__textarea__text {
   margin: 0;
   padding: 20px;
   font-size: 20px;
   color: #fefefe;
 }
-.main .about__main__textarea__text h3 {
+.about__main__textarea__text h3 {
   font-size: 28px;
   margin: 0;
   padding: 0;
   color: #21AEAE;
 }
-.main .about__main__Btnlist {
+.about__main__Btnlist {
   display: none;
 }
 @media screen and (min-width: 1266px) {
-  .main .about__main__Btnlist {
+  .about__main__Btnlist {
     display: block;
     position: absolute;
     top: 470px;
@@ -1028,16 +1030,16 @@ li {
   }
 }
 @media screen and (min-width: 1366px) {
-  .main .about__main__Btnlist {
+  .about__main__Btnlist {
     right: 16%;
   }
 }
 @media screen and (min-width: 1400px) {
-  .main .about__main__Btnlist {
+  .about__main__Btnlist {
     right: 18%;
   }
 }
-.main .about__main__Btn1 {
+.about__main__Btn1 {
   position: absolute;
   width: 70px;
   height: 70px;
@@ -1045,7 +1047,7 @@ li {
   background-image: url(../images/Btn1.png);
   z-index: 100;
 }
-.main .about__main__Btn1__text {
+.about__main__Btn1__text {
   color: #fefefe;
   display: flex;
   justify-content: center;
@@ -1058,13 +1060,13 @@ li {
   background-image: url(../images/Btn1.png);
   transition: 0.3s ease;
 }
-.main .about__main__Btn1__text:hover {
+.about__main__Btn1__text:hover {
   top: 0px;
   left: 0px;
   width: 71px;
   height: 71px;
 }
-.main .about__main__Btn2 {
+.about__main__Btn2 {
   position: absolute;
   top: 0;
   left: 95px;
@@ -1073,7 +1075,7 @@ li {
   background-image: url(../images/Btn1.png);
   z-index: 100;
 }
-.main .about__main__Btn2__text {
+.about__main__Btn2__text {
   width: 72px;
   height: 42px;
   color: #fefefe;
@@ -1088,13 +1090,13 @@ li {
   background-image: url(../images/Btn1.png);
   transition: 0.3s ease;
 }
-.main .about__main__Btn2__text:hover {
+.about__main__Btn2__text:hover {
   top: 0px;
   left: 0px;
   width: 71px;
   height: 71px;
 }
-.main .about__main__Btn3 {
+.about__main__Btn3 {
   position: absolute;
   top: 95px;
   left: 0;
@@ -1103,7 +1105,7 @@ li {
   background-image: url(../images/Btn1.png);
   z-index: 100;
 }
-.main .about__main__Btn3__text {
+.about__main__Btn3__text {
   width: 72px;
   height: 42px;
   color: #fefefe;
@@ -1118,13 +1120,13 @@ li {
   background-image: url(../images/Btn1.png);
   transition: 0.3s ease;
 }
-.main .about__main__Btn3__text:hover {
+.about__main__Btn3__text:hover {
   top: 0px;
   left: 0px;
   width: 71px;
   height: 71px;
 }
-.main .about__main__Btn4 {
+.about__main__Btn4 {
   position: absolute;
   top: 95px;
   left: 95px;
@@ -1133,7 +1135,7 @@ li {
   background-image: url(../images/Btn1.png);
   z-index: 100;
 }
-.main .about__main__Btn4__text {
+.about__main__Btn4__text {
   width: 72px;
   height: 42px;
   color: #fefefe;
@@ -1148,13 +1150,13 @@ li {
   background-image: url(../images/Btn1.png);
   transition: 0.3s ease;
 }
-.main .about__main__Btn4__text:hover {
+.about__main__Btn4__text:hover {
   top: 0px;
   left: 0px;
   width: 71px;
   height: 71px;
 }
-.main .about__main__Btn5 {
+.about__main__Btn5 {
   position: absolute;
   top: 190px;
   left: 0px;
@@ -1163,7 +1165,7 @@ li {
   background-image: url(../images/Btn1.png);
   z-index: 100;
 }
-.main .about__main__Btn5__text {
+.about__main__Btn5__text {
   width: 72px;
   height: 42px;
   color: #fefefe;
@@ -1178,13 +1180,13 @@ li {
   background-image: url(../images/Btn1.png);
   transition: 0.3s ease;
 }
-.main .about__main__Btn5__text:hover {
+.about__main__Btn5__text:hover {
   top: 0px;
   left: 0px;
   width: 71px;
   height: 71px;
 }
-.main .about__main__scroll {
+.about__main__scroll {
   position: absolute;
   top: 215px;
   right: -100px;
@@ -1203,7 +1205,7 @@ li {
   font-style: normal;
   transform: rotateZ(0deg);
 }
-.main .about__main__scroll__2 {
+.about__main__scroll__2 {
   position: absolute;
   top: 470px;
   right: -200px;
@@ -1222,7 +1224,7 @@ li {
   font-style: normal;
   transform: rotateZ(0deg);
 }
-.main .about__main__scroll__3 {
+.about__main__scroll__3 {
   position: absolute;
   top: 740px;
   right: -600px;
@@ -1241,7 +1243,7 @@ li {
   font-style: normal;
   transform: rotateZ(-180deg);
 }
-.main .about__main__scroll ul {
+.about__main__scroll ul {
   -webkit-animation: flowing 100s linear infinite;
           animation: flowing 100s linear infinite;
   font-size: 150px;
@@ -1249,7 +1251,7 @@ li {
   margin: 0;
   padding: 0 0 0 40px;
 }
-.main .about__main__scroll__2 ul {
+.about__main__scroll__2 ul {
   -webkit-animation: flowing2 100s linear infinite;
           animation: flowing2 100s linear infinite;
   font-size: 150px;
@@ -1257,7 +1259,7 @@ li {
   margin: 0;
   padding: 0 0 0 40px;
 }
-.main .about__main__scroll__3 ul {
+.about__main__scroll__3 ul {
   -webkit-animation: flowing 100s linear infinite;
           animation: flowing 100s linear infinite;
   font-size: 150px;
@@ -1265,15 +1267,15 @@ li {
   margin: 0;
   padding: 0 0 0 40px;
 }
-.main .about__main__scroll ul li {
+.about__main__scroll ul li {
   display: inline-block;
   padding-right: 10px;
 }
-.main .about__main__scroll__2 ul li {
+.about__main__scroll__2 ul li {
   display: inline-block;
   padding-right: 10px;
 }
-.main .about__main__scroll__3 ul li {
+.about__main__scroll__3 ul li {
   display: inline-block;
   padding-right: 10px;
 }
@@ -1309,11 +1311,12 @@ li {
     transform: translateX(0);
   }
 }
-.main .works__header {
+
+.works__header {
   background-color: #010101;
   height: 220px;
 }
-.main .works__header__title {
+.works__header__title {
   position: absolute;
   font-size: 80px;
   color: #fefefe;
@@ -1324,30 +1327,31 @@ li {
   font-weight: 400;
   font-style: normal;
 }
-.main .works__header__title_wor {
+.works__header__title_wor {
   margin-right: 0.07em;
 }
-.main .works__header__title_k {
+.works__header__title_k {
   letter-spacing: 0.1em;
 }
-.main .works__main {
+
+.works__main {
   background-color: #010101;
 }
-.main .works__main__inner {
+.works__main__inner {
   width: min(93.75%, 2000px);
   margin-left: auto;
   margin-right: auto;
 }
-.main .works__main__content {
+.works__main__content {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 100px;
 }
-.main .works__main__content a {
+.works__main__content a {
   cursor: none;
 }
-.main .works__main__img {
+.works__main__img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -1359,30 +1363,30 @@ li {
   margin-right: auto;
   max-height: 500px;
 }
-.main .works__main__title {
+.works__main__title {
   text-align: center;
   color: #fefefe;
   font-size: 25px;
   font-weight: normal;
 }
-.main .works__main__title__sub {
+.works__main__title__sub {
   text-align: center;
   color: #fefefe;
 }
-.main .works__main__individual {
+.works__main__individual {
   background-color: #010101;
 }
-.main .works__main__individual__inner {
+.works__main__individual__inner {
   width: min(93.75%, 2000px);
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 60px;
 }
-.main .works__main__individual__img {
+.works__main__individual__img {
   margin-left: auto;
   margin-right: auto;
 }
-.main .works__main__individual__table {
+.works__main__individual__table {
   color: #fefefe;
   margin-left: auto;
   margin-right: auto;
@@ -1390,35 +1394,35 @@ li {
   max-width: 1000px;
   width: 100%;
 }
-.main .works__main__individual__table tbody td {
+.works__main__individual__table tbody td {
   border: 2px solid #fefefe;
   border-collapse: collapse;
   padding: 15px;
 }
-.main .works__main__individual__table__url__2__link {
+.works__main__individual__table__url__2__link {
   color: #21AEAE;
   border-bottom: #21AEAE 1px solid;
   cursor: none;
 }
-.main .works__main__individual__text {
+.works__main__individual__text {
   color: #fefefe;
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
   width: 100%;
 }
-.main .works__main__individual__text__h2 {
+.works__main__individual__text__h2 {
   margin-top: 50px;
   margin-bottom: 15px;
 }
-.main .works__main__individual__text__h2 span {
+.works__main__individual__text__h2 span {
   border-bottom: #21AEAE 3px solid;
   display: inline-block;
 }
-.main .works__main__individual__text__h2__secondary {
+.works__main__individual__text__h2__secondary {
   font-size: 1.2rem;
 }
-.main .works__main__individual__text__h2__secondary span {
+.works__main__individual__text__h2__secondary span {
   display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */
