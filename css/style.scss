@@ -730,7 +730,7 @@ li {
         }
 
         .slider {
-            width: 500vw; // Adjusted width for the new slider
+            width: 500vw;
             display: flex;
             margin: 0 auto;
         }
@@ -756,7 +756,7 @@ li {
         }
 
         .slider5 {
-            transform: translateX(-400vw); // New slider position
+            transform: translateX(-400vw);
             transition: all 0.3s;
         }
 
@@ -796,7 +796,7 @@ li {
         }
 
         .content5 a {
-            background-image: url();
+            background-image: url(../images/nkblog-2.webp);
         }
 
         .indicator {
@@ -836,20 +836,21 @@ li {
         }
     }
 
-    .footer {
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #fefefe;
+
+    &__text {
         width: 100%;
         height: 100px;
-        background-color: #fefefe;
-
-        &__text {
-            width: 100%;
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 10px;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 10px;
     }
 }
 
