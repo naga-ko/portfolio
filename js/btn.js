@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     btn3.addEventListener("click", function () {
-        textarea.innerHTML = "<h3>　趣味</h3><br>・アニメ鑑賞<br>　最近だと転スラ、怪獣8号、ヒロアカ、ぽんのみちなどを見ています。<br><br>・ゲーム<br>　VALORANT、minecraft、ツムツム、スマブラ、プロセカなど、<br>　いろんなジャンルやるのが好きです。<br><br>・スポーツ<br>　バドミントン、水泳、バレー、卓球などで体を動かすことが好きです。<br><br>・絵を描く<br>　0から描くことはあまりしませんが、<br>　基本的に模写やキャラなどのパーツを参考に組み立てて描くことが好きです。";
+        textarea.innerHTML = "<h3>　趣味</h3><br>・アニメ鑑賞<br>　最近だと転スラ、HUNTER×HUNTER、ヒロアカ、ぽんのみちなどを見ています。<br><br>・ゲーム<br>　VALORANT、minecraft、ツムツム、スマブラ、プロセカなど、<br>　いろんなジャンルやるのが好きです。<br><br>・スポーツ<br>　バドミントン、水泳、バレー、卓球などで体を動かすことが好きです。<br><br>・絵を描く<br>　0から描くことはあまりしませんが、<br>　基本的に模写やキャラなどのパーツを参考に組み立てて描くことが好きです。";
     });
 
     btn4.addEventListener("click", function () {
