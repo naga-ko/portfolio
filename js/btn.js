@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const textarea = document.querySelector(".about__main__textarea__text");
 
     btn1.addEventListener("click", function () {
-        textarea.innerHTML = "<h3>　性格</h3><br>1 効率化したい性格<br>　時間を無駄にすることが好きじゃないので時間管理が得意です。<br>　次の行動をあらかじめ考えてから動く。<br>　集合時間５分前までには必ず着くタイプ。<br><br>2 地道な細かい作業が得意<br>　<br>3 創造、想像することが好き<br>　Webデザイナーを知る前から絵を描くことやデザインすること、<br>　何かを作ることが好き。";
+        textarea.innerHTML = "<h3>　性格</h3><br>1 効率化したい性格<br>　時間を無駄にすることが好きじゃないので時間管理が得意です。<br>　次の行動をあらかじめ考えてから動く。<br><br>2 地道な細かい作業が得意<br>　<br>3 創造、想像することが好き<br>　Webデザインを知る前から絵を描くことやデザインすること、<br>　何かを作ることが好き。";
     });
 
     btn2.addEventListener("click", function () {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     btn4.addEventListener("click", function () {
-        textarea.innerHTML = "<h3>　経緯</h3><br>　岐阜県各務原市出身で、育ちは八百津町というところです。<br>　<br>　高校は情報科の学校に通っていたため、pcの操作などは高校の時に覚えました。<br><br>　高校でプログラミングも習っていたのでその知識を活かしたいと思い、<br>　トライデントコンピュータ専門学校、Webデザイン学科に入学。<br><br>　そして、学校でWebについて学び、デザインの楽しさに気づき、<br>　「Webデザイナー」になるために日々勉強に励んでいます。";
+        textarea.innerHTML = "<h3>　経緯</h3><br>　岐阜県各務原市出身で、育ちは八百津町というところです。<br>　<br>　高校は情報科の学校に通っていたため、pcの操作などは高校の時に覚えました。<br><br>　高校でプログラミングも習っていたのでその知識を活かしたいと思い、<br>　トライデントコンピュータ専門学校、Webデザイン学科に入学。<br><br>　そして、学校でWebについて学び、日々勉強に励んでいます。";
     });
 
     btn5.addEventListener("click", function () {
