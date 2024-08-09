@@ -74,7 +74,7 @@ gsap.utils.toArray('.main__background').forEach(wrap => {
         x: +1080,
         scrollTrigger: {
             trigger: wrap,
-            start: "top top ",
+            start: "top 90% top ",
             toggleActions: "play none none reverse",
         }
     })
@@ -84,7 +84,7 @@ gsap.utils.toArray('.main__about__in__img').forEach(wrap => {
         x: +1100,
         scrollTrigger: {
             trigger: wrap,
-            start: "-280px",
+            start: "-800px",
             toggleActions: "play none none reverse",
         }
     })
