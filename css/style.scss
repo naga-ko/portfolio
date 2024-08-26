@@ -252,10 +252,31 @@ li {
         }
     }
 
-    &__gnav {
+    &__top {
         position: fixed;
-        top: 20px;
-        right: 10px;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        z-index: 200;
+    }
+
+    &__logo {
+
+        a {
+            cursor: none;
+            color: #fff;
+        }
+    }
+
+    &__gnav {
+        // position: fixed;
+        // top: 20px;
+        // right: 10px;
         z-index: 100;
         width: 80px;
         height: 80px;
@@ -302,9 +323,9 @@ li {
 
     &__menu {
         position: fixed;
-        top: 0px;
-        right: -100%;
-        width: 200px;
+        top: -25px;
+        right: -120%;
+        width: 100%;
         height: 100vh;
         background-color: $color-White;
         padding: 20px;
@@ -319,7 +340,13 @@ li {
 
     &__menu ul {
         padding: 0;
-        margin-top: 22px;
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+
     }
 
     &__menu li {
@@ -328,7 +355,7 @@ li {
 
     &__menu a {
         color: #333;
-        font-size: 18px;
+        font-size: 24px;
         text-decoration: none;
         position: relative;
         padding-bottom: 5px;
