@@ -323,19 +323,19 @@ li {
 
     &__menu {
         position: fixed;
-        top: -25px;
-        right: -120%;
+        top: -1100%;
         width: 100%;
+        right: 0;
         height: 100vh;
         background-color: $color-White;
         padding: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         z-index: 99;
-        transition: right 0.3s ease;
+        transition: top 0.3s ease;
     }
 
     &__menu.active {
-        right: 0;
+        top: -25px;
     }
 
     &__menu ul {
@@ -841,14 +841,14 @@ li {
                 border-radius: 50%;
                 position: relative;
                 list-style: none;
-                border: 1px $color-accent solid;
+                border: 1px solid $color-accent;
                 margin: 0 15px;
 
                 &::after {
                     content: "";
                     width: 20px;
                     height: 20px;
-                    border: 1px $color-White solid;
+                    border: 1px solid $color-White;
                     border-radius: 50%;
                     position: absolute;
                     top: -9px;
@@ -856,10 +856,12 @@ li {
                     z-index: 9;
                 }
 
-                &.list1 {
-                    background-color: $color-accent;
-                }
+
             }
+
+            // & li.list1 {
+            //     background-color: $color-accent;
+            // }
         }
     }
 }

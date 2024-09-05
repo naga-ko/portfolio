@@ -272,18 +272,18 @@ li {
 }
 .header__menu {
   position: fixed;
-  top: -25px;
-  right: -120%;
+  top: -1100%;
   width: 100%;
+  right: 0;
   height: 100vh;
   background-color: #fefefe;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 99;
-  transition: right 0.3s ease;
+  transition: top 0.3s ease;
 }
 .header__menu.active {
-  right: 0;
+  top: -25px;
 }
 .header__menu ul {
   padding: 0;
@@ -750,22 +750,19 @@ li {
   border-radius: 50%;
   position: relative;
   list-style: none;
-  border: 1px #21AEAE solid;
+  border: 1px solid #21AEAE;
   margin: 0 15px;
 }
 .main .main__works .indicator li::after {
   content: "";
   width: 20px;
   height: 20px;
-  border: 1px #fefefe solid;
+  border: 1px solid #fefefe;
   border-radius: 50%;
   position: absolute;
   top: -9px;
   left: -9px;
   z-index: 9;
-}
-.main .main__works .indicator li.list1 {
-  background-color: #21AEAE;
 }
 
 .footer {
