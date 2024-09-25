@@ -602,6 +602,20 @@ li {
     font-size: 24px;
   }
 }
+.main__about__text__4 {
+  max-width: 70px;
+  max-height: 30px;
+  padding: 0px 0px 10px 5px;
+  font-size: 20px;
+  color: #fefefe;
+  border-bottom: #fefefe 1px solid;
+  border-left: #fefefe 1px solid;
+}
+@media screen and (min-width: 610px) {
+  .main__about__text__4 {
+    font-size: 24px;
+  }
+}
 .main__about__title {
   position: absolute;
   font-size: 80px;
