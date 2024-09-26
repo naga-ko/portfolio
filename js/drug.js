@@ -1,7 +1,7 @@
 const sliderWrapper = document.querySelector('.main__works__wrapper');
 const slider = document.querySelector('.slider');
 const contents = document.querySelectorAll('.content'); // スライドの数を取得
-const slideWidth = sliderWrapper.clientWidth; // スライド1つの幅
+let slideWidth = sliderWrapper.clientWidth; // スライド1つの幅
 let isDragging = false;
 let startPos = 0;
 let currentTranslate = 0;
@@ -115,14 +115,13 @@ function setPositionByIndex() {
     updateIndicators(); // インジケーターの更新
 }
 
-indicators.forEach((indicator, index) => {
-    indicator.addEventListener('click', () => {
-        if (index !== currentIndex) {
-            currentIndex = index;
-            setPositionByIndex();
-        }
-    });
+// リサイズイベントに対応
+window.addEventListener('resize', () => {
+    // 画面サイズが変わった時にスライドの幅を再計算
+    slideWidth = sliderWrapper.clientWidth;
+    setPositionByIndex(); // 位置を再設定
 });
+
 function updateIndicators() {
     indicators.forEach((indicator, index) => {
         if (index === currentIndex) {
@@ -131,14 +130,4 @@ function updateIndicators() {
             indicator.style.backgroundColor = '$color-White'; // 非表示のインジケーター
         }
     });
-}
-
-// 既存の setPositionByIndex 関数を修正
-function setPositionByIndex() {
-    currentTranslate = -currentIndex * slideWidth;
-    prevTranslate = currentTranslate;
-    slider.style.transition = 'transform 0.3s ease-out';
-    slider.style.transform = `translateX(${currentTranslate}px)`;
-
-    updateIndicators(); // インジケーターの更新
 }
